@@ -2,7 +2,7 @@
 //  HomeItem.swift
 //  Architecture-MVVM
 //
-//  Created by Armin Stanitzok on 25.05.23.
+//  Created by Armin Stanitzok
 //
 
 import Foundation

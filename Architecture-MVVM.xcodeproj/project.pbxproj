@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1E9A54342A1FB39B006EFBFC /* Architecture_MVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9A54332A1FB39B006EFBFC /* Architecture_MVVMApp.swift */; };
-		1E9A54362A1FB39B006EFBFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9A54352A1FB39B006EFBFC /* ContentView.swift */; };
 		1E9A54382A1FB3A3006EFBFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E9A54372A1FB3A3006EFBFC /* Assets.xcassets */; };
 		1E9A543B2A1FB3A3006EFBFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E9A543A2A1FB3A3006EFBFC /* Preview Assets.xcassets */; };
 		1E9A54452A1FB3A4006EFBFC /* Architecture_MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9A54442A1FB3A4006EFBFC /* Architecture_MVVMTests.swift */; };
@@ -43,7 +42,6 @@
 /* Begin PBXFileReference section */
 		1E9A54302A1FB39B006EFBFC /* Architecture-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Architecture-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E9A54332A1FB39B006EFBFC /* Architecture_MVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Architecture_MVVMApp.swift; sourceTree = "<group>"; };
-		1E9A54352A1FB39B006EFBFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1E9A54372A1FB3A3006EFBFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E9A543A2A1FB3A3006EFBFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1E9A54402A1FB3A4006EFBFC /* Architecture-MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Architecture-MVVMTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,7 +110,6 @@
 				1E9A545E2A1FB3E6006EFBFC /* Viewmodel */,
 				1E9A545D2A1FB3DA006EFBFC /* View */,
 				1E9A54332A1FB39B006EFBFC /* Architecture_MVVMApp.swift */,
-				1E9A54352A1FB39B006EFBFC /* ContentView.swift */,
 				1E9A54372A1FB3A3006EFBFC /* Assets.xcassets */,
 				1E9A54392A1FB3A3006EFBFC /* Preview Content */,
 				1E9A54682A1FB5EF006EFBFC /* ApiClient.swift */,
@@ -305,7 +302,6 @@
 				1E9A54692A1FB5EF006EFBFC /* ApiClient.swift in Sources */,
 				1E9A54612A1FB443006EFBFC /* HomeScreen.swift in Sources */,
 				1E9A54672A1FB521006EFBFC /* HomeItem.swift in Sources */,
-				1E9A54362A1FB39B006EFBFC /* ContentView.swift in Sources */,
 				1E9A546D2A1FC1C6006EFBFC /* ItemView.swift in Sources */,
 				1E9A54342A1FB39B006EFBFC /* Architecture_MVVMApp.swift in Sources */,
 				1E9A546B2A1FBABD006EFBFC /* HomeView.swift in Sources */,

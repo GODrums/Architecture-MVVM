@@ -2,7 +2,7 @@
 //  Architecture_MVVMTests.swift
 //  Architecture-MVVMTests
 //
-//  Created by Armin Stanitzok on 25.05.23.
+//  Created by Armin Stanitzok
 //
 
 import XCTest
