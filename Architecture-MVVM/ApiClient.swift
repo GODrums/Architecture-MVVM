@@ -24,7 +24,6 @@ public struct ApiClient {
     }
     
     private static func request() async throws -> Data {
-
         var components = URLComponents()
         components.scheme = "https"
         components.host = "api.csgostonks.online"
@@ -33,30 +32,14 @@ public struct ApiClient {
         guard let url = components.url else {
             throw NSError()
         }
-        var urlRequest = URLRequest(url: url)
-        urlRequest.cachePolicy = .reloadIgnoringLocalCacheData
+        let (data, response) = try await URLSession.shared.data(from: url)
 
-        if let cached = URLCache.shared.cachedResponse(for: urlRequest) {
-            return cached.data
-        } else {
-            let (data, response) = try await URLSession.shared.data(from: url)
-
-            guard
-                let response = response as? HTTPURLResponse,
+        guard let response = response as? HTTPURLResponse,
                 (200...299).contains(response.statusCode)
-            else {
-                throw NSError()
-            }
-
-            let cachedURLResponse = CachedURLResponse(
-                response: response,
-                data: data,
-                storagePolicy: .allowedInMemoryOnly
-            )
-            URLCache.shared.storeCachedResponse(cachedURLResponse, for: urlRequest)
-
-            return data
+        else {
+            throw NSError()
         }
+        return data
     }
 }
 
