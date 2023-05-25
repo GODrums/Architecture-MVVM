@@ -23,7 +23,7 @@ class HomeViewModel: ObservableObject {
         case .idle, .error:
             do {
                 self.state = .loading
-                let data = try await Self._fetchItems()
+                let data = try await Self._fetchServerItems()
                 self.state = .success(data)
             } catch {
                 if error is CancellationError {
@@ -34,7 +34,7 @@ class HomeViewModel: ObservableObject {
         case .loading:
             return
         case .success:
-            if let data = try? await Self._fetchItems() {
+            if let data = try? await Self._fetchServerItems() {
                 self.state = .success(data)
             }
         }
@@ -44,7 +44,8 @@ class HomeViewModel: ObservableObject {
         let data = try? await ApiClient.getMockData()
         return data?.map({ HomeItem(
             title: $0.title,
-            subTitle: $0.subTitle
+            subTitle: $0.subTitle,
+            link: ""
         )}) ?? []
     }
     
@@ -52,7 +53,8 @@ class HomeViewModel: ObservableObject {
         let data = try? await ApiClient.getItems()
         return data?.map({ HomeItem(
             title: $0.title,
-            subTitle: $0.subTitle
+            subTitle: $0.subTitle,
+            link: $0.link
         )}) ?? []
     }
 }

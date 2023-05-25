@@ -11,4 +11,5 @@ struct HomeItem: Identifiable {
     var id = UUID()
     var title: String
     var subTitle: String
+    var link: String
 }

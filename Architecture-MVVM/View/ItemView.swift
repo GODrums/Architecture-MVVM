@@ -22,6 +22,11 @@ struct ItemView: View {
                 Text(item.subTitle)
                     .font(.caption)
                     .foregroundColor(.gray)
+                if item.link.count > 0 {
+                    Text(item.link)
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                }
             }
             .padding(20)
             .multilineTextAlignment(.center)

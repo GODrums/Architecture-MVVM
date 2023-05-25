@@ -17,10 +17,10 @@ public struct ApiClient {
         return dummyData
     }
     
-    static func getItems() async throws -> [MockData] {
+    static func getItems() async throws -> [ApiData] {
         let data = try await Self.request()
         let decoder = JSONDecoder()
-        return try decoder.decode([MockData].self, from: data)
+        return try decoder.decode([ApiData].self, from: data)
     }
     
     private static func request() async throws -> Data {
@@ -47,4 +47,9 @@ struct MockData: Decodable {
     var id: UUID
     var title: String
     var subTitle: String
+}
+
+struct ApiData: Decodable {
+    var id: Int
+    var title, subTitle, link: String
 }

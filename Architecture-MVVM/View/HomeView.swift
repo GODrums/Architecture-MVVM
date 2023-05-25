@@ -11,7 +11,7 @@ struct HomeView: View {
     @ObservedObject var viewModel: HomeViewModel
 
     var body: some View {
-        ScrollView(.vertical, showsIndicators: true) {
+        ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 20) {
                 ForEach(viewModel.homeItems) {
                     ItemView(item: $0)
