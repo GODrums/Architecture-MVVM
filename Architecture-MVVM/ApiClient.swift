@@ -8,19 +8,19 @@
 import Foundation
 
 public struct ApiClient {
-    static func getMockData() async throws -> [ApiData]? {
+    static func getMockData() async throws -> [MockData]? {
         sleep(2)
-        var dummyData: [ApiData] = [ApiData]()
+        var dummyData: [MockData] = [MockData]()
         for i in 0...20 {
-            dummyData.append(ApiData(id: UUID().hashValue, title: "This is title nr. \(i)", subTitle: "Including a subtitle"))
+            dummyData.append(MockData(id: UUID(), title: "This is title nr. \(i)", subTitle: "Including a subtitle"))
         }
         return dummyData
     }
     
-    static func getItems() async throws -> [ApiData] {
+    static func getItems() async throws -> [MockData] {
         let data = try await Self.request()
         let decoder = JSONDecoder()
-        return try decoder.decode([ApiData].self, from: data)
+        return try decoder.decode([MockData].self, from: data)
     }
     
     private static func request() async throws -> Data {
@@ -60,9 +60,8 @@ public struct ApiClient {
     }
 }
 
-struct ApiData: Decodable {
-    var id: Int
+struct MockData: Decodable {
+    var id: UUID
     var title: String
     var subTitle: String
-    
 }
