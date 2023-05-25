@@ -25,6 +25,5 @@ struct HomeScreen: View {
         .task {
             await viewModel.fetchItems()
         }
-        .navigationTitle("News")
     }
 }
