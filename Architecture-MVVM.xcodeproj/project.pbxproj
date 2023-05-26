@@ -40,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E434DA82A2033510012BB38 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1E434DA92A20372E0012BB38 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		1E9A54302A1FB39B006EFBFC /* Architecture-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Architecture-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E9A54332A1FB39B006EFBFC /* Architecture_MVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Architecture_MVVMApp.swift; sourceTree = "<group>"; };
 		1E9A54372A1FB3A3006EFBFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,6 +88,8 @@
 		1E9A54272A1FB39B006EFBFC = {
 			isa = PBXGroup;
 			children = (
+				1E434DA92A20372E0012BB38 /* LICENSE.md */,
+				1E434DA82A2033510012BB38 /* README.md */,
 				1E9A54322A1FB39B006EFBFC /* Architecture-MVVM */,
 				1E9A54432A1FB3A4006EFBFC /* Architecture-MVVMTests */,
 				1E9A544D2A1FB3A4006EFBFC /* Architecture-MVVMUITests */,
